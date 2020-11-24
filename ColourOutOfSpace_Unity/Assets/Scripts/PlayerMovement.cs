@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10f;
     public float gravity = -10f;
     public float jumpHeight = 5f;
+    public AudioSource footsteps;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
+        //Movement
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
+        //Jump with Spacebar
         if (Input.GetButton("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
@@ -42,5 +45,15 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
+        //Footstep Sound
+        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        {
+            if(!footsteps.isPlaying)
+            footsteps.Play();
+        }
+        else
+        {
+            footsteps.Stop();
+        }
     }
 }
