@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
         //Footstep Sound
-        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        if (Input.GetButton("Horizontal") && isGrounded  || Input.GetButton("Vertical") && isGrounded)
         {
             if(!footsteps.isPlaying)
             footsteps.Play();
