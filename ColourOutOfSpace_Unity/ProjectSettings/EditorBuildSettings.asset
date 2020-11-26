@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: c94708a6bdf889f4ebe65a19f1c0c698
   - enabled: 1
+    path: Assets/MainLowPoly.unity
+    guid: bd1ab1345c5aacf4c88810372c54a3ef
+  - enabled: 1
     path: Assets/ControlsMenu.unity
     guid: c9a81220090e25e4193a56c89efae70a
   - enabled: 1
