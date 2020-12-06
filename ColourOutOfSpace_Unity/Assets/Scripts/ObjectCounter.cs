@@ -75,7 +75,7 @@ public class ObjectCounter : MonoBehaviour
         scoreText.GetComponent<TMPro.TextMeshProUGUI>().text = "Gesammelte Hinweise: " + items.Count;
 
         pickUpText.gameObject.SetActive(false);
-        Destroy(gameObject);
+        //Destroy(gameObject);
         Destroy(itemDisplayText);
 
         //Wenn Anzahl von items gefunden wurde, dann:
