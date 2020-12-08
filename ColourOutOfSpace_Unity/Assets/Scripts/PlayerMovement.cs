@@ -19,7 +19,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    public GameObject anleitungText;
     public List<string> Inventory;
+
+    private void Start()
+    {
+        anleitungText.SetActive(true);
+    }
 
     void Update()
     {
@@ -59,5 +65,6 @@ public class PlayerMovement : MonoBehaviour
             footsteps.Stop();
         }
 
+        Destroy(anleitungText, 5f);
     }
 }
