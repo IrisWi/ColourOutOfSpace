@@ -12,6 +12,8 @@ public class Pickup : MonoBehaviour
     public GameObject pressEText;
     public AudioSource pickUpSound;
 
+    public GameObject inventoryFullText;
+
     private bool pickUpAllowed;
 
 
@@ -21,6 +23,7 @@ public class Pickup : MonoBehaviour
         itemText.SetActive(false);
         pickUpText.SetActive(false);
         pressEText.SetActive(false);
+        inventoryFullText.SetActive(false);
     }
 
     private void Update()
@@ -58,11 +61,11 @@ public class Pickup : MonoBehaviour
                     DoSomethingElse();
                     break;
                 }
-                //if (inventory.isFull[i] == true)
-                //{
-                //    SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
-
-                //}
+                else if (inventory.isFull[1] == true)
+                {
+                    inventoryFullText.SetActive(true);
+                    Cursor.lockState = CursorLockMode.None;
+                }
             }
 
         }
