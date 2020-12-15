@@ -10,6 +10,7 @@ public class Pickup : MonoBehaviour
     public GameObject itemText;
     public GameObject pickUpText;
     public GameObject pressEText;
+    public GameObject pickUpImage;
     public AudioSource pickUpSound;
 
     public GameObject inventoryFullText;
@@ -22,6 +23,7 @@ public class Pickup : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         itemText.SetActive(false);
         pickUpText.SetActive(false);
+        pickUpImage.SetActive(false);
         pressEText.SetActive(false);
         inventoryFullText.SetActive(false);
     }
@@ -75,7 +77,9 @@ public class Pickup : MonoBehaviour
     {
         pickUpSound.Play();
         pickUpText.SetActive(true);
-        Destroy(pickUpText, 5f);
+        pickUpImage.SetActive(true);
+        Destroy(pickUpText, 10f);
+        Destroy(pickUpImage, 10f);
         itemText.SetActive(false);
         pressEText.SetActive(false);
     }
