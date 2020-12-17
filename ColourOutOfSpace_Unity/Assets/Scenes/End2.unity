@@ -123,6 +123,133 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36281710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36281712}
+  - component: {fileID: 36281711}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &36281711
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36281710}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 90c33a7f088c4de44bbc5220abed085c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &36281712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36281710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 557.4876, y: 334.34808, z: 35.25997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254653027
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +706,6 @@ GameObject:
   - component: {fileID: 748554458}
   - component: {fileID: 748554457}
   - component: {fileID: 748554456}
-  - component: {fileID: 748554455}
   - component: {fileID: 748554459}
   m_Layer: 5
   m_Name: T_Text
@@ -607,102 +733,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 38}
   m_SizeDelta: {x: 1500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &748554455
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748554453}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &748554456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b0426dbb67c1b42a1580a39033bda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPaused: 0.03
+  letterPaused: 0.04
   message: 
   wholeText: {fileID: 1666886374}
   animatedText: {fileID: 748554453}
@@ -741,18 +771,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Denn alle Familienmitglieder waren bereits tot, als Ammi dich gefunden
-    hat - niemand hat \xFCberlebt, was vor sich ging. Vor einem Jahr schlug ein Meteor
-    direkt neben dem Brunnen der Familie ein. Es handelte sich dabei nicht um ein
-    normales Gestein wie es uns Menschen gel\xE4ufig ist - die damals entnommenen
-    Proben konnte sich niemand erkl\xE4ren\u2026 aber der Meteor war scheinbar verflucht.
-    Er sonderte eine eigenartige Farbe aus, die nach und nach den ganzen Hof und
-    alles Leben einnahm - und die  Familie langsam aber sicher ausl\xF6schte. Das
-    Wasser aus dem Brunnen scheint besonders toxisch zu sein - h\xE4ttest du daraus
-    getrunken, so h\xE4ttest du vermutlich das Schicksal der Familie geteilt. Du
-    bist m\xFCde, ich sehe es dir an \u2026 \n\nDie ganze Geschichte wurde von einem
-    Autor namens H.P. Lovecraft in einer Erz\xE4hlung namens \u201CDie Farbe aus
-    dem All\u201D zusammengefasst - ruh dich aus und lie\xDF sie dir anschlie\xDFend
-    unbedingt durch!\n"
+    hat - niemand hat \xFCberlebt. Vor einem Jahr schlug ein Meteor direkt neben
+    dem Brunnen der Familie ein. Es handelte sich dabei nicht um ein normales Gestein
+    wie es uns Menschen gel\xE4ufig ist - die damals entnommenen Proben konnte sich
+    niemand erkl\xE4ren\u2026 der Meteor war scheinbar verflucht. Er sonderte eine
+    eigenartige Farbe aus, die nach und nach den ganzen Hof und alles Leben einnahm
+    - und die  Familie langsam aber sicher ausl\xF6schte. Das Wasser aus dem Brunnen
+    scheint besonders toxisch zu sein - h\xE4ttest du daraus getrunken, so h\xE4ttest
+    du vermutlich das Schicksal der Familie geteilt. Du bist m\xFCde, ich sehe es
+    dir an \u2026 \n\nDie ganze Geschichte wurde von einem Autor namens H.P. Lovecraft
+    in einer Erz\xE4hlung namens \u201CDie Farbe aus dem All\u201D zusammengefasst
+    - ruh dich aus und lie\xDF sie dir anschlie\xDFend unbedingt durch!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}

@@ -20,6 +20,7 @@ public class TextAnimator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1;
         animatedText.SetActive(true);
         //Get text component
         tmpComp = GetComponent<TextMeshProUGUI>();

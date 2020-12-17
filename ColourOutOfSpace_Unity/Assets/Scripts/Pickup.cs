@@ -20,6 +20,7 @@ public class Pickup : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         itemText.SetActive(false);
         pickUpText.SetActive(false);
@@ -65,8 +66,7 @@ public class Pickup : MonoBehaviour
                 }
                 else if (inventory.isFull[1] == true)
                 {
-                    inventoryFullText.SetActive(true);
-                    Cursor.lockState = CursorLockMode.None;
+                    congratsEnd();
                 }
             }
 
@@ -82,5 +82,12 @@ public class Pickup : MonoBehaviour
         Destroy(pickUpImage, 10f);
         itemText.SetActive(false);
         pressEText.SetActive(false);
+    }
+
+    void congratsEnd()
+    {
+        inventoryFullText.SetActive(true);
+        //Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
