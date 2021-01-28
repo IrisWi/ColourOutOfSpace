@@ -7,33 +7,34 @@ public class Pickup : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject itemButton;
+    public GameObject pickupPanel;
     public GameObject itemText;
-    public GameObject pickUpText;
     public GameObject pressEText;
-    public GameObject pickUpImage;
     public AudioSource pickUpSound;
     public AudioSource congratsSound;
 
     public GameObject inventoryFullText;
 
     private bool pickUpAllowed;
-
+    private bool pickedUp;
+    private GameObject pickedUpItem;
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         itemText.SetActive(false);
-        pickUpText.SetActive(false);
-        pickUpImage.SetActive(false);
+        pickupPanel.SetActive(false);
         pressEText.SetActive(false);
         inventoryFullText.SetActive(false);
     }
 
     private void Update()
     {
-        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
-            pickItUp();
+        if (pickUpAllowed && Input.GetKeyDown(KeyCode.E)) {
+            addInventory();
+            DoSomethingElse();
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -50,7 +51,7 @@ public class Pickup : MonoBehaviour
         pressEText.SetActive(false);
     }
 
-    void pickItUp()
+    void addInventory()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -62,7 +63,7 @@ public class Pickup : MonoBehaviour
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     Destroy(gameObject);
-                    DoSomethingElse();
+                    pickedUp = true;
                     break;
                 }
                 else if (inventory.isFull[5] == true)
@@ -77,10 +78,8 @@ public class Pickup : MonoBehaviour
     void DoSomethingElse()
     {
         pickUpSound.Play();
-        pickUpText.SetActive(true);
-        pickUpImage.SetActive(true);
-        Destroy(pickUpText, 10f);
-        Destroy(pickUpImage, 10f);
+        pickupPanel.SetActive(true);
+        Destroy(pickupPanel, 8f);
         itemText.SetActive(false);
         pressEText.SetActive(false);
     }
@@ -89,7 +88,8 @@ public class Pickup : MonoBehaviour
     {
         inventoryFullText.SetActive(true);
         congratsSound.Play();
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
