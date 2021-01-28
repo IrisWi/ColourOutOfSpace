@@ -12,6 +12,7 @@ public class Pickup : MonoBehaviour
     public GameObject pressEText;
     public GameObject pickUpImage;
     public AudioSource pickUpSound;
+    public AudioSource congratsSound;
 
     public GameObject inventoryFullText;
 
@@ -64,7 +65,7 @@ public class Pickup : MonoBehaviour
                     DoSomethingElse();
                     break;
                 }
-                else if (inventory.isFull[1] == true)
+                else if (inventory.isFull[5] == true)
                 {
                     congratsEnd();
                 }
@@ -87,6 +88,7 @@ public class Pickup : MonoBehaviour
     void congratsEnd()
     {
         inventoryFullText.SetActive(true);
+        congratsSound.Play();
         //Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
     }
