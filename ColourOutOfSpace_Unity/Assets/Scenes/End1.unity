@@ -1665,7 +1665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b0426dbb67c1b42a1580a39033bda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPaused: 0.05
+  letterPaused: 0.04
   message: 
   wholeText: {fileID: 2141853572}
   animatedText: {fileID: 1346435455}

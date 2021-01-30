@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class PauseMenu : MonoBehaviour
         else
         {
             DeactivateMenu();
+        }
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
