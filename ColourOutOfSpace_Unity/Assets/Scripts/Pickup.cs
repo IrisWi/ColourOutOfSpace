@@ -14,6 +14,7 @@ public class Pickup : MonoBehaviour
     public AudioSource congratsSound;
 
     public GameObject inventoryFullText;
+    public GameObject exitObject;
 
     private bool pickUpAllowed;
     private bool pickedUp;
@@ -27,6 +28,7 @@ public class Pickup : MonoBehaviour
         pickupPanel.SetActive(false);
         pressEText.SetActive(false);
         inventoryFullText.SetActive(false);
+        exitObject.SetActive(false);
     }
 
     private void Update()
@@ -63,7 +65,6 @@ public class Pickup : MonoBehaviour
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     Destroy(gameObject);
-                    pickedUp = true;
                     break;
                 }
                 else if (inventory.isFull[5] == true)
@@ -79,7 +80,7 @@ public class Pickup : MonoBehaviour
     {
         pickUpSound.Play();
         pickupPanel.SetActive(true);
-        Destroy(pickupPanel, 8f);
+        //Destroy(pickupPanel, 8f);
         itemText.SetActive(false);
         pressEText.SetActive(false);
     }
@@ -87,9 +88,7 @@ public class Pickup : MonoBehaviour
     void congratsEnd()
     {
         inventoryFullText.SetActive(true);
+        exitObject.SetActive(true);
         congratsSound.Play();
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 }

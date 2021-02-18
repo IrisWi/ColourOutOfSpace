@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 388.20547}
+  m_AnchoredPosition: {x: 30, y: 388.20547}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &404108363
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: Steuerung
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61b04d3881a0ee44caf3cdccd0580a7d, type: 2}
   m_sharedMaterial: {fileID: 1173054908949758744, guid: 61b04d3881a0ee44caf3cdccd0580a7d, type: 2}
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Look Around
+  m_text: Kamera
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -1048,7 +1048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &588724861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1174,7 +1174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847048282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.517974, y: 12.08108, z: -155.75716}
+  m_LocalPosition: {x: 50, y: 12.08108, z: -155.75716}
   m_LocalScale: {x: 2.1917808, y: 2.1917808, z: 2.1917808}
   m_Children:
   - {fileID: 1875859024}
@@ -1327,7 +1327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &959465472
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1936,7 +1936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87, y: -115}
+  m_AnchoredPosition: {x: 315, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093710014
@@ -2174,7 +2174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -164.4383, y: -730}
+  m_AnchoredPosition: {x: 715, y: -480}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117974731
@@ -2411,7 +2411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1184898916
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interact
+  m_text: Aufheben
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -2947,7 +2947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1477485226
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3203,7 +3203,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 373, y: -480}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623347281
 MonoBehaviour:
@@ -3225,7 +3225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Flashlight
+  m_text: Taschenlampe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -3777,7 +3777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: "Zur\xFCck"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -4430,7 +4430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Movement
+  m_text: Bewegung
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}

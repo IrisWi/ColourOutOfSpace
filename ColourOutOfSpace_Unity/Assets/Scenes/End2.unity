@@ -353,7 +353,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: "Zur\xFCck"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -1682,6 +1682,7 @@ GameObject:
   - component: {fileID: 1501809848}
   - component: {fileID: 1501809847}
   - component: {fileID: 1501809846}
+  - component: {fileID: 1501809849}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1737,6 +1738,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1501809849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501809845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a12166313c0854ea2247be3736cc12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519288572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,7 +1899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Weiter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}

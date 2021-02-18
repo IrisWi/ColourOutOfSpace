@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To Menu
+  m_text: "Zum Men\xFC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
   m_sharedMaterial: {fileID: -7436494591090120019, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -2510,6 +2510,7 @@ GameObject:
   - component: {fileID: 2032750671}
   - component: {fileID: 2032750670}
   - component: {fileID: 2032750669}
+  - component: {fileID: 2032750672}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2565,6 +2566,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032750672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032750668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a12166313c0854ea2247be3736cc12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2057164062
 GameObject:
   m_ObjectHideFlags: 0
