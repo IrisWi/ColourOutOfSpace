@@ -2200,7 +2200,7 @@ MonoBehaviour:
     zu sein\u2026 \nWas geht hier blo\xDF vor sich? \r\nEin Spezialteam wurde damit
     beauftragt den Hof zu untersuchen - kurz nach der Ankunft beschloss das Team
     jedoch, den Auftrag abzubrechen. Sie konnten nicht begr\xFCnden warum genau,
-    aber etwas schien ihnen furchtbare Angst zu machen. Es liegt nun an dir der Familie
+    aber etwas schien ihnen furchtbare Angst zu machen. Es liegt nun an DIR der Familie
     zu helfen!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647c73a3704825948ba3f86f14247f63, type: 2}
@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b0426dbb67c1b42a1580a39033bda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPaused: 0.05
+  letterPaused: 0.04
   message: 
   wholeText: {fileID: 1017350530}
   animatedText: {fileID: 1629453889}
